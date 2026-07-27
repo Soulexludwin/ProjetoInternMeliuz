@@ -11,6 +11,14 @@ utilizando Inteligência Artificial (Google Gemini), oferecendo flexibilidade de
 - Pandas<br>
 - Pathlib / Dotenv <br>
 
+## ⚙️ Configuração do Google Sheets (Opcional):
+
+Renomeie o arquivo credentials.json.example para credentials.json.
+
+Substitua o conteúdo pelas credenciais da sua Conta de Serviço do Google Cloud Console.
+
+Compartilhe a sua planilha do Google Sheets com o e-mail presente no campo client_email com permissão de Editor.
+
 ## 📖 Instruções de Instalação e Execução:<br>
 *ATENÇÂO, REQUER QUE VOCÊ TENHA HABILITADO A EXECUÇÂO DE .bat e A EXTENÇÂO DOS ARQUIVOS.*
 Caso esteja executando o projeto a partir de uma versão compactada (.zip ou .rar), siga os passos abaixo:<br>
