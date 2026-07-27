@@ -12,6 +12,7 @@ utilizando Inteligência Artificial (Google Gemini), oferecendo flexibilidade de
 - Pathlib / Dotenv <br>
 
 ## 📖 Instruções de Instalação e Execução:<br>
+*ATENÇÂO, REQUER QUE VOCÊ TENHA HABILITADO A EXECUÇÂO DE .bat e A EXTENÇÂO DOS ARQUIVOS.*
 Caso esteja executando o projeto a partir de uma versão compactada (.zip ou .rar), siga os passos abaixo:<br>
 
 Extração:<br>
@@ -20,13 +21,17 @@ Extraia o conteúdo do arquivo compactado em uma pasta de sua preferência na m�
 Configuração da API:
 
 Certifique-se de que o arquivo .env contendo a sua chave da API (GEMINI_API_KEY=sua_chave) está posicionado na raiz do projeto junto com os arquivos.<br>
+Caso não contenha um arquivo .env, abra o .bat (qualquer um dos dois) e insira a chave api quando solicitado<br>
+
 
 ## Dependências:<br>
 
 Abra o terminal na pasta do projeto e instale as dependências necessárias listadas no arquivo requirements.txt utilizando o comando:<br>
-
+```text
 pip install -r requirements.txt<br>
-
+OU <br>
+python -m pip install -r requirements.txt<br>
+```
 ## Inicialização:<br>
 
 Utilize o arquivo .bat correspondente ao modo de execução desejado:<br>
@@ -36,7 +41,7 @@ Utilize o arquivo .bat correspondente ao modo de execução desejado:<br>
 🌐 Modo Web (Streamlit): Dê dois cliques no script de execução web para abrir o painel interativo diretamente no navegador padrão.<br>
 
 ## 📂 Organização dos Resultados (output/)<br>
-Após a realização das análises (seja de arquivos únicos ou em lote), os artefatos gerados pelo sistema são salvos automaticamente na pasta *output/*:<br>
+Após a realização das análises (seja de arquivos únicos ou em lote), os artefatos gerados pelo sistema são salvos automaticamente na pasta *output*:<br>
 
 Relatórios Executivos (output/reports/): Arquivos em formato .txt contendo a análise estratégica detalhada gerada pela IA, salvos com registro de data e hora (timestamp) para histórico completo.
 
