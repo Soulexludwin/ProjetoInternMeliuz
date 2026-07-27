@@ -22,7 +22,7 @@ st.write("⚠️ Certifique-se de que o arquivo CSV esteja no formato correto, c
 st.caption("Não se preocupe se estiver demorando um pouco, o tempo médio de processamento é de aproximadamente 40 segundos.")
 st.caption("Feito por Ryan Kaique, versão 0.4.6")
 
-# Plano de fundo e estilos corporativos aprimorados para melhor padronização visual
+# Plano de fundo e estilos do texto
 st.markdown(
     """
     <style>
@@ -116,16 +116,15 @@ if arquivos_para_processar:
                 
                 with st.spinner(f"Analisando ({i+1}/{total_arquivos}): {nome_exibicao}..."):
                     try:
-                        # 1. Processa o CSV e extrai os dados estruturados pelo Python
                         dados_para_ia = processar_csv(str(caminho_arq))
                         
                         if total_arquivos > 1 and i > 0:
                             time.sleep(20)
                             
-                        # 2. Executa a IA para gerar o relatório estratégico
+                       
                         resultado_analise = analyze_ab_test(dados_para_ia)
                         
-                        # 3. Salva os artefatos localmente (Relatório TXT com timestamp e CSV acumulativo)
+                        #CSV acumulativo
                         salvar_relatorio_txt(nome_exibicao, resultado_analise)
                         
                         if "[Segunda SAÍDA : DADOS PARA PLANILHA]" in resultado_analise:
@@ -139,14 +138,11 @@ if arquivos_para_processar:
                         
                         st.success(f"✅ Análise concluída para: {nome_exibicao}")
                         
-                        # 4. Exibição Visual dos Gráficos com base nos dados tratados pelo Python
                         st.markdown("---")
                         st.subheader(f"📈 Panorama Visual das Variantes: {nome_exibicao}")
-                        # Exibe um gráfico de barras comparativo direto na interface web
                         if isinstance(dados_para_ia, pd.DataFrame) and not dados_para_ia.empty:
                             st.bar_chart(dados_para_ia)
                         
-                        # 5. Tratamento e exibição limpa do Relatório Executivo da IA
                         partes = resultado_analise.split("[Segunda SAÍDA : DADOS PARA PLANILHA]")
                         relatorio_executivo = partes[0].replace("[Primeira SAÍDA : RELATÓRIO EXECUTIVO]", "").strip()
                         

@@ -1,0 +1,36 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório Executivo: Análise de Teste A/B - Otimização de Cashback
+
+## Resumo Executivo
+Este relatório apresenta a análise de performance do teste A/B realizado com o **Parceiro C**, comparando duas variantes de regras de distribuição de cashback. O objetivo principal é identificar qual estratégia maximiza a rentabilidade (Lucro do Méliuz) mantendo a saúde do volume de vendas (GMV) e a base de compradores.
+
+---
+
+## Tabela Comparativa de Métricas
+
+| Métrica | Grupo 1 | Grupo 2 | Variação (Grupo 2 vs. Grupo 1) |
+| :--- | :---: | :---: | :---: |
+| **Compradores** | 4.549 | 4.522 | -0,59% |
+| **Vendas Totais (GMV)** | R$ 1.738.460,00 | R$ 1.685.240,00 | -3,06% |
+| **Comissão Recebida** | R$ 121.693,00 | R$ 117.967,00 | -3,06% |
+| **Custo de Cashback** | R$ 86.924,00 | R$ 117.967,00 | +35,71% |
+| **Lucro Méliuz (Comissão - Cashback)** | **R$ 34.769,00** | **R$ 0,00** | **-100,00%** |
+| **Ticket Médio** | R$ 382,16 | R$ 372,68 | -2,48% |
+| **ROI do Cashback (GMV / Cashback)** | 20,00 | 14,29 | -28,57% |
+
+---
+
+## Análise e Conclusão
+
+1. **Eficiência de Receita (Lucro Líquido):** O **Grupo 1** gerou um lucro líquido de **R$ 34.769,00** para o Méliuz, enquanto o **Grupo 2** operou em ponto de equilíbrio (*break-even*), gerando **R$ 0,00** de lucro, uma vez que todo o valor recebido de comissão (R$ 117.967,00) foi integralmente repassado aos usuários como cashback.
+2. **Volume e Demanda:** A diferença no volume de compradores entre o Grupo 1 (4.549) e o Grupo 2 (4.522) é estatisticamente irrelevante (-0,59%). Isso demonstra que o aumento agressivo no cashback do Grupo 2 **não foi capaz de estimular uma demanda incremental significativa** que compensasse o custo.
+3. **Saúde Financeira:** O Grupo 1 apresentou um Retorno sobre o Cashback superior (20x o valor investido convertido em GMV, contra 14,2x do Grupo 2), provando ser uma alocação de capital muito mais eficiente.
+
+> **RECOMENDAÇÃO FINAL:**
+> **Variante Vencedora a ser escalada para 100%: Grupo 1**
+
+---
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+Parceiro C | Otimizar rentabilidade e margem de cashback | Grupo 1 gerou lucro de R$ 34.7k com margem positiva enquanto o Grupo 2 operou com lucro zero | Grupo 1

@@ -61,11 +61,11 @@ def executar_analise(caminho_arquivo):
         print(resultado_analise)
         print("-" * 40)
         
-        # 1. Salva o relatório completo em formato TXT
+        # armazenamento em txt
         from src.sheets_integrador import salvar_relatorio_txt, salvar_resultado_teste
         salvar_relatorio_txt(caminho_arquivo.name, resultado_analise)
         
-        # 2. Extrai e salva os dados estruturados (usando separador | para evitar conflito de vírgulas)
+        # Conteúdo do csv
         if "[Segunda SAÍDA : DADOS PARA PLANILHA]" in resultado_analise:
             bloco_dados = resultado_analise.split("[Segunda SAÍDA : DADOS PARA PLANILHA]")[1].strip()
             linhas = [linha for linha in bloco_dados.split('\n') if linha.strip() and not linha.startswith('-')]

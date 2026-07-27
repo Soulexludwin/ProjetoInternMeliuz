@@ -1,0 +1,27 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório Executivo: Otimização de Cashback e Rentabilidade (Teste A/B)
+
+## 1. Resumo dos Resultados Gerais
+Analisamos os dados do teste A/B realizado com o **Parceiro A**, avaliando três variantes (Grupos 1, 2 e 3) com diferentes políticas de distribuição de cashback. O objetivo central é identificar a estratégia que maximiza o lucro do Méliuz (comissão recebida menos o cashback pago aos usuários) sem comprometer o volume de transações e o GMV (vendas totais).
+
+## 2. Tabela Comparativa de Métricas
+
+| Grupos de Usuários | Compradores | Vendas Totais (GMV) | Comissão Total | Cashback Total | Lucro Méliuz (Comissão - Cashback) | Ticket Médio (GMV / Compradores) | Retorno sobre o Cashback (GMV / Cashback) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Grupo 1** | 9.633 | R$ 5.605.170,00 | R$ 638.135,00 | R$ 233.424,00 | **R$ 404.711,00** | R$ 581,87 | 24,01x |
+| **Grupo 2** | 10.814 | R$ 6.423.100,00 | R$ 728.178,00 | R$ 370.659,00 | **R$ 357.519,00** | R$ 593,96 | 17,33x |
+| **Grupo 3** | 11.410 | R$ 6.785.860,00 | R$ 767.887,00 | R$ 503.600,00 | **R$ 264.287,00** | R$ 594,73 | 13,47x |
+
+## 3. Análise de Decisão e Negócio
+* **Grupo 3**: Gerou o maior GMV (R$ 6,78M) e volume de compradores (11.410), porém exigiu um custo de cashback muito elevado (R$ 503,6k). Isso corroeu a margem, resultando no **menor lucro líquido para o Méliuz (R$ 264.287,00)**.
+* **Grupo 2**: Apresentou um bom volume de compradores e GMV intermediário, mas o lucro líquido caiu em relação ao Grupo 1 devido ao aumento proporcionalmente maior no custo de cashback.
+* **Grupo 1**: Embora tenha apresentado os menores números absolutos de compradores e GMV, operou com a maior eficiência de custos. O menor desembolso com cashback garantiu o **maior lucro líquido para o Méliuz (R$ 404.711,00)** e a maior eficiência do capital investido (Retorno sobre o Cashback de 24,01x).
+
+## 4. Conclusão e Recomendação
+Matematicamente, o **Grupo 1** maximiza a rentabilidade (Lucro Líquido) da operação para este parceiro, sacrificando um volume marginal de GMV que não se paga via comissão. Portanto, a recomendação estratégica é priorizar a margem e a saúde financeira da unidade de negócio.
+
+> **DECISÃO FINAL:** Devemos escalar o **Grupo 1** para 100% do tráfego.
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+Parceiro A | Testar diferentes variantes de cashback para otimizar o lucro líquido e a conversão | O Grupo 1 apresentou o maior lucro líquido para o Méliuz apesar do menor GMV | Grupo 1

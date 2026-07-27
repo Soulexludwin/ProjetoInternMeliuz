@@ -1,0 +1,40 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório Executivo: Análise de Teste A/B - Otimização de Cashback
+
+## 1. Resumo Executivo
+Este relatório apresenta a análise de performance do teste A/B realizado com o **Parceiro C**, comparando duas variantes de estratégias de cashback (**Grupo 1** vs **Grupo 2**). O objetivo central é identificar qual estrutura de incentivo maximiza a rentabilidade do Méliuz (lucro bruto) mantendo a saúde do volume de vendas (GMV) e conversão.
+
+## 2. Metodologia e Métricas Calculadas
+Os dados brutos foram limpos e consolidados. Com base neles, foram derivadas as seguintes métricas fundamentais para o negócio:
+*   **Lucro Méliuz:** `Comissão total - Cashback total` (Margem de contribuição direta).
+*   **Ticket Médio:** `Vendas totais (GMV) / Compradores`.
+*   **Retorno sobre o Cashback (ROI do Cashback):** `Vendas totais / Cashback` (Eficiência do incentivo na geração de GMV).
+
+### Tabela Comparativa de Desempenho
+
+| Métrica | Grupo 1 | Grupo 2 | Variação (G2 vs G1) |
+| :--- | :---: | :---: | :---: |
+| **Compradores** | 4.549 | 4.522 | -0,59% |
+| **GMV (Vendas Totais)** | R$ 1.738.460,00 | R$ 1.685.240,00 | -3,06% |
+| **Comissão Total** | R$ 121.693,00 | R$ 117.967,00 | -3,06% |
+| **Custo de Cashback** | R$ 86.924,00 | R$ 117.967,00 | +35,71% |
+| **Lucro Méliuz** | **R$ 34.769,00** | **R$ 0,00** | **+R$ 34.769,00** |
+| **Ticket Médio** | R$ 382,16 | R$ 372,68 | -2,48% |
+| **Retorno sobre o Cashback** | 20,00 | 14,29 | -28,55% |
+
+## 3. Análise de Resultados
+*   **Grupo 2 (Cashback 100% da comissão):** Apresentou uma política agressiva onde todo o valor recebido de comissão (R$ 117.967,00) foi repassado integralmente como cashback aos usuários. Isso resultou em **lucro zero** para o Méliuz, além de gerar menos GMV e menos compradores que o Grupo 1.
+*   **Grupo 1 (Cashback otimizado):** Distribuiu R$ 86.924,00 em cashback, mantendo uma margem saudável e gerando um **Lucro Líquido de R$ 34.769,00**. Além disso, o Grupo 1 demonstrou maior eficiência geral, com um GMV superior (~R$ 1,74M vs ~R$ 1,69M) e melhor retorno sobre o capital investido em cashback (20.0x vs 14.3x).
+
+## 4. Conclusão e Recomendação
+Matematicamente e financeiramente, o **Grupo 1** é a única opção viável, visto que o Grupo 2 opera com margem de contribuição nula. A estratégia do Grupo 1 protege a saúde financeira da operação (gerando receita líquida positiva) sem penalizar a conversão de usuários.
+
+> **RECOMENDAÇÃO FINAL:** 
+> Devemos escalar o **Grupo 1** para 100% do tráfego.
+
+---
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+
+Parceiro C | Otimizacao da politica de cashback para maximizacao de lucro e eficiencia de margem | Grupo 1 gerou lucro liquido positivo de R$ 34.769 enquanto o Grupo 2 operou com margem zero | Grupo 1
