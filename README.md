@@ -41,7 +41,7 @@ Utilize o arquivo .bat correspondente ao modo de execução desejado:<br>
 🌐 Modo Web (Streamlit): Dê dois cliques no script de execução web para abrir o painel interativo diretamente no navegador padrão.<br>
 
 ## 📂 Organização dos Resultados (output/)<br>
-Após a realização das análises (seja de arquivos únicos ou em lote), os artefatos gerados pelo sistema são salvos automaticamente na pasta *output*:<br>
+Após a realização das análises (seja de arquivos únicos ou em lote), os artefatos gerados pelo sistema são salvos automaticamente na pasta *output* e na planilha escolhida no google sheets:<br>
 
 Relatórios Executivos (output/reports/): Arquivos em formato .txt contendo a análise estratégica detalhada gerada pela IA, salvos com registro de data e hora (timestamp) para histórico completo.
 
