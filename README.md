@@ -5,7 +5,7 @@ utilizando Inteligência Artificial (Google Gemini), oferecendo flexibilidade de
 
 ## Tecnologias/LIBS Utilizadas:<br>
 - Python 3.10+<br>
-- Gemini (melhoras textuais nos executaveis e auxilio em soluções de erros)<br>
+- Gemini (melhoras de identação nos executaveis, polimento do código e auxilio em soluções de erros)<br>
 - Google GenAI SDK ( integração do assistente virtual )<br>
 - Streamlit (Interface Web)<br>
 - Pandas<br>
