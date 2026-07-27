@@ -28,9 +28,9 @@ Caso não contenha um arquivo .env, abra o .bat (qualquer um dos dois) e insira 
 
 Abra o terminal na pasta do projeto e instale as dependências necessárias listadas no arquivo requirements.txt utilizando o comando:<br>
 ```text
-pip install -r requirements.txt<br>
-OU <br>
-python -m pip install -r requirements.txt<br>
+pip install -r requirements.txt
+# OU
+python -m pip install -r requirements.txt
 ```
 ## Inicialização:<br>
 
