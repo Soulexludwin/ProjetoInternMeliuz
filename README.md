@@ -13,11 +13,11 @@ utilizando Inteligência Artificial (Google Gemini), oferecendo flexibilidade de
 
 ## ⚙️ Configuração do Google Sheets (Opcional):
 
-Renomeie o arquivo credentials.json.example para credentials.json.
+- Renomeie o arquivo credentials.json.example para credentials.json.
 
-Substitua o conteúdo pelas credenciais da sua Conta de Serviço do Google Cloud Console.
+- Substitua o conteúdo pelas credenciais da sua Conta de Serviço do Google Cloud Console.
 
-Compartilhe a sua planilha do Google Sheets com o e-mail presente no campo client_email com permissão de Editor.
+- Compartilhe a sua planilha do Google Sheets com o e-mail presente no campo client_email com permissão de Editor.
 
 ## 📖 Instruções de Instalação e Execução:<br>
 *ATENÇÂO, REQUER QUE VOCÊ TENHA HABILITADO A EXECUÇÂO DE .bat e A EXTENÇÂO DOS ARQUIVOS.*
@@ -25,7 +25,7 @@ Caso esteja executando o projeto a partir de uma versão compactada (.zip ou .ra
 
 Extração:<br>
 
-Extraia o conteúdo do arquivo compactado em uma pasta de sua preferência na máquina.<br>
+- Extraia o conteúdo do arquivo compactado em uma pasta de sua preferência na máquina.<br>
 Configuração da API:
 
 Certifique-se de que o arquivo .env contendo a sua chave da API (GEMINI_API_KEY=sua_chave) está posicionado na raiz do projeto junto com os arquivos.<br>
@@ -49,11 +49,11 @@ Utilize o arquivo .bat correspondente ao modo de execução desejado:<br>
 🌐 Modo Web (Streamlit): Dê dois cliques no script de execução web para abrir o painel interativo diretamente no navegador padrão.<br>
 
 ## 📂 Organização dos Resultados (output/)<br>
-Após a realização das análises (seja de arquivos únicos ou em lote), os artefatos gerados pelo sistema são salvos automaticamente na pasta *output* e na planilha escolhida no google sheets:<br>
+- Após a realização das análises (seja de arquivos únicos ou em lote), os artefatos gerados pelo sistema são salvos automaticamente na pasta *output* e na planilha escolhida no google sheets:<br>
 
-Relatórios Executivos (output/reports/): Arquivos em formato .txt contendo a análise estratégica detalhada gerada pela IA, salvos com registro de data e hora (timestamp) para histórico completo.
+- Relatórios Executivos (output/reports/): Arquivos em formato .txt contendo a análise estratégica detalhada gerada pela IA, salvos com registro de data e hora (timestamp) para histórico completo.
 
-Registro Consolidado (output/registro_testes.csv): Arquivo estruturado com os dados consolidados das decisões tomadas pelo modelo.
+- Registro Consolidado (output/registro_testes.csv): Arquivo estruturado com os dados consolidados das decisões tomadas pelo modelo.
 
 ## ⚠️ Nota de Segurança:<br> Caso sua máquina possua políticas de restrição para execução de arquivos .bat, você pode rodar a aplicação manualmente abrindo o terminal na pasta do projeto e utilizando os comandos:
 
