@@ -1,0 +1,46 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório Executivo: Análise de Teste A/B - Otimização de Cashback
+
+**Data da Análise:** Atual  
+**Analista:** Sênior de Dados & Growth (Méliuz)  
+**Parceiro Analisado:** Parceiro C  
+
+## 1. Resumo dos Resultados Gerais
+Este relatório analisa o desempenho de duas variantes de estratégias de cashback implementadas com o **Parceiro C**. O objetivo central é identificar qual estrutura maximiza a rentabilidade (Lucro do Méliuz) mantendo a saúde do volume de compradores e o GMV (Vendas Totais).
+
+- **Grupo 1:** Estrutura de cashback otimizada (Menor alocação percentual de cashback em relação à comissão).
+- **Grupo 2:** Estrutura de cashback agressiva (100% da comissão repassada como cashback).
+
+---
+
+## 2. Tabela Comparativa de Métricas
+
+| Métrica | Grupo 1 | Grupo 2 | Variação (G2 vs G1) |
+| :--- | :---: | :---: | :---: |
+| **Compradores** | 4.549 | 4.522 | -0,59% |
+| **Vendas Totais (GMV)** | R$ 1.738.460,00 | R$ 1.685.240,00 | -3,06% |
+| **Comissão Recebida** | R$ 121.693,00 | R$ 117.967,00 | -3,06% |
+| **Custo de Cashback** | R$ 86.924,00 | R$ 117.967,00 | +35,71% |
+| **Lucro Méliuz (Comissão - Cashback)** | **R$ 34.769,00** | **R$ 0,00** | **-100,00%** |
+| **Ticket Médio** | R$ 382,16 | R$ 372,68 | -2,48% |
+| **Retorno sobre o Cashback (GMV/Cashback)** | 20,00 | 14,29 | -28,55% |
+
+---
+
+## 3. Conclusão e Justificativa de Negócio
+
+Do ponto de vista financeiro e de sustentabilidade do negócio, os dados demonstram uma disparidade gritante:
+1. **Rentabilidade:** O **Grupo 1** gerou um lucro líquido de **R$ 34.769,00** para o Méliuz, operando com uma margem saudável sobre a comissão. Em contrapartida, o **Grupo 2** operou com **lucro zero**, pois todo o valor recebido de comissão foi repassado integralmente como cashback aos usuários.
+2. **Volume e Demanda:** A elasticidade da demanda em relação ao aumento do cashback no Grupo 2 mostrou-se ineficiente. O volume de compradores permaneceu praticamente inestável (-0,59%), enquanto o GMV e o ticket médio foram superiores no Grupo 1. Isso prova que oferecer mais cashback (100% da comissão) não atraiu volume incremental suficiente para compensar a perda de margem.
+
+---
+
+## 4. Recomendação Final
+
+> **VARIANTE VENCEDORA A ESCALAR PARA 100%: GRUPO 1**
+
+O **Grupo 1** deve ser escalado para 100% do tráfego imediatamente, pois garante a monetização saudável da operação do Méliuz sem penalizar a conversão ou o volume de vendas.
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+Parceiro C | Otimizar rentabilidade e margem de cashback | Grupo 1 gerou lucro de mais de 34 mil reais com margem positiva enquanto o Grupo 2 zerou o lucro | Grupo 1

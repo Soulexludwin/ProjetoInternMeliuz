@@ -1,0 +1,34 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório Executivo: Otimização de Cashback e Rentabilidade (Parceiro B)
+
+### Resumo Executivo
+Este relatório apresenta a análise de performance do teste A/B realizado com o **Parceiro B**, avaliando três variantes de distribuição de cashback. O objetivo central é identificar a estratégia que maximiza o lucro do Méliuz (comissão recebida menos o cashback distribuído), mantendo uma base saudável de compradores e volume de vendas (GMV).
+
+---
+
+### Tabela Comparativa de Desempenho
+
+| Grupo de Usuários | Compradores | Vendas Totais (GMV) | Comissão Total | Custo de Cashback | Lucro Méliuz (Comissão - Cashback) | Ticket Médio | Retorno s/ Cashback (GMV/Cashback) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Grupo 1** | 7.990 | R$ 4.093.820,00 | R$ 450.321,00 | R$ 163.751,00 | **R$ 286.570,00** | R$ 512,37 | 25,00 |
+| **Grupo 2** | 5.452 | R$ 2.863.020,00 | R$ 314.935,00 | R$ 171.778,00 | **R$ 143.157,00** | R$ 525,13 | 16,67 |
+| **Grupo 3** | 5.029 | R$ 2.629.960,00 | R$ 289.290,00 | R$ 236.697,00 | **R$ 52.593,00** | R$ 522,96 | 11,11 |
+
+---
+
+### Análise e Fundamentação de Negócios
+
+1. **Eficiência de Margem e Lucratividade:** O **Grupo 1** gerou um lucro líquido para o Méliuz de **R$ 286.570,00**, o que representa mais do que o dobro do lucro do Grupo 2 (R$ 143.157,00) e mais de 5 vezes o lucro do Grupo 3 (R$ 52.593,00). Isso ocorreu porque, embora o Grupo 1 tenha recebido um volume menor de cashback absoluto em relação ao volume de vendas, ele escalou agressivamente a base de compradores e o GMV.
+2. **Volume e Conversão:** O **Grupo 1** superou drasticamente as outras variantes em volume de compradores (+46% em relação ao Grupo 2 e +58% em relação ao Grupo 3), provando ser uma proposta muito mais atraente para o consumidor final, gerando maior captação de tráfego e conversão.
+3. **Retorno sobre o Investimento (ROI em Cashback):** Cada R$ 1,00 investido em cashback no Grupo 1 retornou R$ 25,00 em GMV, contra R$ 16,67 no Grupo 2 e R$ 11,11 no Grupo 3. A menor oferta de cashback do Grupo 1 não penalizou as vendas; pelo contrário, demonstrou maior eficiência alocativa de capital.
+
+### Conclusão e Recomendação
+Matemática e financeiramente, o **Grupo 1** é a única escolha racional para escalar o negócio, pois maximiza o lucro líquido da empresa sem sacrificar a conversão — na verdade, impulsionando-a massivamente.
+
+> **RECOMENDAÇÃO FINAL:** Devemos escalar o **Grupo 1** para **100% do tráfego**.
+
+---
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+Parceiro B | Testar diferentes variantes de cashback para maximizar o lucro líquido e a conversão | Grupo 1 gerou o maior lucro líquido (R$ 286.570,00) e maior volume de compradores | Grupo 1

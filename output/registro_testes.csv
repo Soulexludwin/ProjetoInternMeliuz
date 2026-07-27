@@ -1,0 +1,16 @@
+Data/Hora|Nome do Teste|Descrição|Resultado|Decisão Tomada
+2026-07-27 01:18:52|Data set 01 parceiro A|Teste de elasticidade de cashback para otimizacao de GMV e lucro|Grupo 2 maximizou o lucro liquido mantendo alta conversao e crescimento de GMV|Grupo 2
+2026-07-27 01:19:16|Data set 01 parceiro B|Teste de otimizacao de cashback para maximizar lucro liquido e volume de compradores|Grupo 1 gerou maior lucro (R$ 286.570) e maior volume de compradores (7.990) com melhor eficiencia de margem|Grupo 1
+2026-07-27 01:19:40|Data set 01 Parceiro C|Teste A/B de politicas de cashback comparando margem sustentavel vs repasse integral|Grupo 1 gerou R$ 34769 de lucro liquido com maior GMV enquanto o Grupo 2 operou com margem zero|Grupo 1
+2026-07-27 01:52:01|Parceiro A|Otimização de taxas e margem de cashback para maximização de lucro|Maior lucro líquido para o Méliuz com R$ 404.711 e melhor eficiência de capital|Grupo 1
+2026-07-27 01:52:25|Parceiro B|Testar diferentes estratégias de cashback para identificar a otimização ideal entre conversão e margem de lucro|O Grupo 1 gerou o maior lucro líquido para o Méliuz (R$ 286.570,00) e o maior volume de compradores (7.990) superando amplamente as outras variantes em rentabilidade e eficiência|Grupo 1
+2026-07-27 01:52:48|Parceiro C|Comparar lucratividade versus volume de vendas com diferentes politicas de cashback|Grupo 1 gerou R$ 34.769 de lucro contra R$ 0 do Grupo 2 mantendo volume equivalente de compradores|Grupo 1
+2026-07-27 01:52:57|Parceiro A|Identificar a variante de cashback ideal para maximizar a lucratividade do Méliuz mantendo a eficiência|O Grupo 1 gerou o maior lucro líquido (R$ 404.711) e a maior eficiência de retorno sobre o cashback (24,01x)|Grupo 1
+2026-07-27 01:53:21|Parceiro B|Testar diferentes variantes de cashback para maximizar o lucro do Méliuz e volume de compradores|O Grupo 1 maximizou o lucro líquido (R$ 286.570) e o volume de compradores (7.990) com a maior eficiência de capital|Grupo 1
+2026-07-27 01:53:44|Parceiro C|Otimizar estrutura de cashback para maximizar o lucro do Méliuz mantendo o GMV|Grupo 1 gerou R$ 34.769 de lucro com margem de 28.57% contra zero de lucro no Grupo 2|Grupo 1
+2026-07-27 01:54:13|Parceiro A|Otimização de cashback para balancear volume de vendas e rentabilidade líquida do Méliuz|Grupo 1 gerou o maior lucro líquido (R$ 404,7k) e a maior margem (63,42%) apesar de menor volume|Grupo 1
+2026-07-27 01:54:37|Parceiro B|Testar diferentes variantes de cashback para maximizar o lucro líquido e a conversão|Grupo 1 gerou o maior lucro líquido (R$ 286.570,00) e maior volume de compradores|Grupo 1
+2026-07-27 01:55:01|Parceiro C|Otimizar rentabilidade e margem de cashback|Grupo 1 gerou lucro de mais de 34 mil reais com margem positiva enquanto o Grupo 2 zerou o lucro|Grupo 1
+2026-07-27 02:01:27|Parceiro A|Otimizacao da rentabilidade e margem de cashback|Maior lucro liquido para o Meliuz com maior eficiencia de custo|Grupo 1
+2026-07-27 02:01:51|Parceiro B|Otimizar a taxa de cashback para maximizar o lucro do Méliuz e volume de compradores|Grupo 1 gerou o maior lucro líquido (R$ 286.570) e o maior volume de compradores|Grupo 1
+2026-07-27 02:02:15|Parceiro C|Otimizar rentabilidade e margem de cashback|Grupo 1 gerou lucro de R$ 34.7k com margem positiva enquanto o Grupo 2 operou com lucro zero|Grupo 1
