@@ -1,0 +1,30 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório Executivo: Otimização de Cashback (Parceiro A)
+
+## Resumo dos Resultados Gerais
+Analisamos os dados do teste A/B realizado com o **Parceiro A**, comparando três variantes de regras de cashback (Grupos 1, 2 e 3). O objetivo central é identificar a estratégia que maximiza a rentabilidade (Lucro do Méliuz) mantendo uma alta eficiência na conversão de GMV e compradores.
+
+Abaixo estão as métricas consolidadas e derivadas:
+
+| Grupos de Usuários | Compradores | Vendas Totais (GMV) | Comissão Total | Cashback Total | Lucro Méliuz (Comissão - Cashback) | Margem Média (%) | Ticket Médio (GMV / Compradores) | ROI do Cashback (GMV / Cashback) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Grupo 1** | 9.633 | R$ 5.605.170,00 | R$ 638.135,00 | R$ 233.424,00 | **R$ 404.711,00** | 63,42% | R$ 581,87 | R$ 24,01 |
+| **Grupo 2** | 10.814 | R$ 6.423.100,00 | R$ 728.178,00 | R$ 370.659,00 | **R$ 357.519,00** | 49,10% | R$ 593,96 | R$ 17,33 |
+| **Grupo 3** | 11.410 | R$ 6.785.860,00 | R$ 767.887,00 | R$ 503.600,00 | **R$ 264.287,00** | 34,42% | R$ 594,73 | R$ 13,47 |
+
+---
+
+## Análise de Negócio e Tomada de Decisão
+* **Volume vs. Rentabilidade:** À medida que aumentamos o cashback (do Grupo 1 para o Grupo 3), observamos um crescimento natural no volume de compradores (+18,4%) e no GMV (+21,1%). No entanto, o custo do cashback cresceu em um ritmo muito mais acelerado (+115,7%).
+* **Eficiência do Lucro:** O **Grupo 1** gerou o menor volume bruto de vendas, porém apresentou a maior **Lucratividade Líquida para o Méliuz (R$ 404.711,00)**, superando o Grupo 2 em ~13% e o Grupo 3 em ~53%. 
+* **Margem:** O Grupo 1 mantém uma margem extremamente saudável de 63,42% sobre a comissão recebida, enquanto o Grupo 3 consome quase 66% da receita de comissão apenas pagando o benefício ao usuário.
+
+> **RECOMENDAÇÃO EXPLICITA:**
+> **Devemos escalar o Grupo 1 para 100% do tráfego.** 
+> *Justificativa:* Embora as variantes 2 e 3 gerem mais GMV bruto, o modelo de negócios do Méliuz depende do spread entre comissão e cashback. O Grupo 1 maximiza o lucro absoluto retido pela empresa, evitando a erosão da margem causada por incentivos de cashback excessivamente agressivos.
+
+---
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+Parceiro A | Teste A/B de otimização de regras de cashback para maximização de lucro líquido | Grupo 1 gerou o maior lucro líquido (R$ 404k) com a melhor eficiência de margem | Grupo 1

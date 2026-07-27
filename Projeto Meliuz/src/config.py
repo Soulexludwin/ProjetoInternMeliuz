@@ -3,10 +3,16 @@ import os
 from dotenv import load_dotenv
 import logging
 from google import genai
-# Se executado a partir de src/config.py, a base é a pasta pai (raiz do projeto)
+import sys
+if getattr(sys, 'frozen', False):
+    base_path = Path(sys.executable).parent
+else:
+    base_path = Path(__file__).resolve().parent.parent
+
+env_path = base_path / ".env"
+load_dotenv(dotenv_path=env_path)
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Força o carregamento do .env apontando diretamente para a raiz do projeto
 env_path = BASE_DIR / ".env"
 load_dotenv(dotenv_path=env_path)
 
@@ -31,7 +37,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_NAME = "gemini-3.5-flash-lite" # Alterar caso tenha uma preferencia por outro modelo do gemini
 
 # Parâmetros do LLM
-
+#===========================================
 TEMPERATURE = 0.2  
 MAX_TOKENS = 2000
 REQUEST_TIMEOUT = 30
@@ -42,6 +48,7 @@ DEBUG = True
 LOG_LEVEL = "INFO"
 
 # Configuração refinada do formato de log
+#===========================================
 try:
     level = getattr(logging, LOG_LEVEL.upper(), logging.INFO)
     logging.basicConfig(

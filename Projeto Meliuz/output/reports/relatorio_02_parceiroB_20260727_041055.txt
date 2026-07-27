@@ -1,0 +1,46 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório de Análise de Teste A/B - Otimização de Cashback
+
+**Parceiro:** Parceiro B  
+**Autor:** Analista de Dados e Growth Sênior (Méliuz)  
+
+---
+
+## 1. Resumo Executivo
+Este relatório apresenta os resultados de um teste A/B realizado com três variantes de cashback para o Parceiro B. O objetivo central da análise é identificar qual estrutura de cashback maximiza a rentabilidade (Lucro do Méliuz) e a conversão, respondendo de forma definitiva sobre qual grupo deve receber 100% do tráfego.
+
+Após a limpeza, consolidação e cálculo das métricas de negócio, fica evidente que o **Grupo 1** superou significativamente as demais variantes em todas as frentes de valor, combinando o maior volume de compradores, maior GMV (vendas totais) e, crucialmente, a maior rentabilidade líquida para o Méliuz.
+
+---
+
+## 2. Tabela Comparativa de Desempenho
+
+| Métrica de Negócio | Grupo 1 | Grupo 2 | Grupo 3 |
+| :--- | :---: | :---: | :---: |
+| **Compradores** | **7.990** | 5.452 | 5.029 |
+| **Vendas Totais (GMV)** | **R$ 4.093.820,00** | R$ 2.863.020,00 | R$ 2.629.960,00 |
+| **Comissão Total** | R$ 450.321,00 | R$ 314.935,00 | R$ 289.290,00 |
+| **Custo de Cashback** | R$ 163.751,00 | R$ 171.778,00 | R$ 236.697,00 |
+| **Lucro Méliuz (Comissão - Cashback)** | **R$ 286.570,00** | **R$ 143.157,00** | **R$ 52.593,00** |
+| **Ticket Médio** | R$ 512,37 | R$ 525,13 | R$ 522,96 |
+| **Retorno sobre o Cashback (GMV / Cashback)** | **25,00** | 16,67 | 11,11 |
+
+---
+
+## 3. Análise de Resultados e Justificativa de Negócio
+
+* **Rentabilidade (Lucro do Méliuz):** O **Grupo 1** gerou **R$ 286.570,00** de lucro líquido. Isso representa quase o **dobro** do lucro do Grupo 2 (R$ 143.157,00) e mais de **5 vezes** o lucro obtido pelo Grupo 3 (R$ 52.593,00). 
+* **Eficiência do Cashback:** O Grupo 1 operou com um custo de cashback muito mais eficiente. Para cada R$ 1,00 investido em cashback no Grupo 1, gerou-se R$ 25,00 em GMV. No Grupo 3, essa eficiência caiu para R$ 11,11, demonstrando que aumentar excessivamente o cashback não trouxe uma conversão proporcional de vendas.
+* **Volume e Escala:** O Grupo 1 atraiu **7.990 compradores**, contra 5.452 do Grupo 2 e 5.029 do Grupo 3. O menor percentual de cashback do Grupo 1 não penalizou a demanda; pelo contrário, a base manteve-se altamente engajada, provando que o modelo foi atrativo para o usuário final e altamente sustentável para a margem do Méliuz.
+
+---
+
+## 4. Conclusão e Recomendação Final
+
+> **RESPOSTA DEFINITIVA:** Devemos escalar o **Grupo 1** para 100% do tráfego.
+
+**Justificativa:** O Grupo 1 é a única escolha viável sob a ótica de Growth e Unit Economics. Ele maximiza o lucro do Méliuz, garante maior volume de transações e otimiza o uso do capital investido em cashback, entregando um crescimento saudável e sustentável.
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+Parceiro B | Otimização de regras de cashback para maximização de lucro e volume de vendas | Grupo 1 gerou o maior lucro líquido (R$ 286.570,00) e o maior volume de compradores | Grupo 1

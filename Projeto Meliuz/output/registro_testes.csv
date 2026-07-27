@@ -1,0 +1,4 @@
+Data/Hora,Nome do Teste,Descrição,Resultado,Decisão Tomada
+2026-07-27 04:10:31,Parceiro A,Teste A/B de otimização de regras de cashback para maximização de lucro líquido,Grupo 1 gerou o maior lucro líquido (R$ 404k) com a melhor eficiência de margem,Grupo 1
+2026-07-27 04:10:55,Parceiro B,Otimização de regras de cashback para maximização de lucro e volume de vendas,"Grupo 1 gerou o maior lucro líquido (R$ 286.570,00) e o maior volume de compradores",Grupo 1
+2026-07-27 04:11:19,Parceiro C,Comparação de estratégias de cashback para otimização de margem e receita líquida,"Grupo 1 gerou R$ 34.769 de lucro com margem de 28,57%, enquanto o Grupo 2 zerou a rentabilidade (lucro zero)",Grupo 1

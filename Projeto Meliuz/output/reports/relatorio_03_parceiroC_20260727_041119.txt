@@ -1,0 +1,34 @@
+[Primeira SAÍDA : RELATÓRIO EXECUTIVO]
+
+# Relatório Executivo: Análise de Teste A/B - Otimização de Cashback
+
+## Resumo Executivo
+Este relatório apresenta a análise de performance do teste A/B realizado com o **Parceiro C**, comparando duas variantes de estratégias de cashback (**Grupo 1** e **Grupo 2**). O objetivo central é identificar qual estrutura maximiza a rentabilidade (lucro) do Méliuz, mantendo a saúde do volume de compradores e do GMV (vendas totais).
+
+## Tabela Comparativa de Métricas
+
+| Métrica | Grupo 1 | Grupo 2 | Variação (G2 vs G1) |
+| :--- | :--- | :--- | :--- |
+| **Compradores** | 4.549 | 4.522 | -0,59% |
+| **Vendas Totais (GMV)** | R$ 1.738.460,00 | R$ 1.685.240,00 | -3,06% |
+| **Comissão (Receita Bruta)** | R$ 121.693,00 | R$ 117.967,00 | -3,06% |
+| **Custo de Cashback** | R$ 86.924,00 | R$ 117.967,00 | +35,71% |
+| **Lucro Méliuz (Comissão - Cashback)** | **R$ 34.769,00** | **R$ 0,00** | **-100%** |
+| **Margem de Lucro sobre Comissão** | 28,57% | 0,00% | -28,57 p.p. |
+| **Ticket Médio** | R$ 382,16 | R$ 372,68 | -2,48% |
+| **Retorno sobre o Cashback (GMV/Cashback)** | R$ 20,00 | R$ 14,29 | -28,55% |
+
+*Nota: Os dados originais de vendas totais em notação científica foram convertidos para valores absolutos padrão (1.738.460 e 1.685.240).*
+
+## Análise de Negócio e Conclusão
+- **Rentabilidade (Lucro Méliuz):** O **Grupo 1** gerou um lucro líquido de **R$ 34.769,00**, operando com uma margem saudável de 28,57% sobre a comissão recebida. Em contrapartida, o **Grupo 2** apresentou um lucro de **R$ 0,00**, uma vez que todo o valor recebido de comissão (R$ 117.967,00) foi integralmente repassado aos usuários como cashback, inviabilizando a operação do negócio nesta variante.
+- **Volume e Demanda:** A diferença no volume de compradores entre o Grupo 1 (4.549) e o Grupo 2 (4.522) é marginal (-0,59%). Isso comprova que o aumento agressivo do cashback no Grupo 2 não gerou um efeito elástico na base de compradores quecompensasse a perda de margem. Pelo contrário, o GMV e o Ticket Médio também foram superiores no Grupo 1.
+
+> **RECOMENDAÇÃO FINAL:**
+> **Variante Vencedora a ser escalada para 100%: Grupo 1**
+> O Grupo 1 é a única opção viável, pois garante a sustentabilidade financeira do Méliuz (gerando lucro positivo) sem sacrificar a conversão ou o volume de vendas.
+
+---
+
+[Segunda SAÍDA : DADOS PARA PLANILHA]
+Parceiro C | Comparação de estratégias de cashback para otimização de margem e receita líquida | Grupo 1 gerou R$ 34.769 de lucro com margem de 28,57%, enquanto o Grupo 2 zerou a rentabilidade (lucro zero) | Grupo 1
