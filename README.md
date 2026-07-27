@@ -47,4 +47,12 @@ Relatórios Executivos (output/reports/): Arquivos em formato .txt contendo a an
 
 Registro Consolidado (output/registro_testes.csv): Arquivo estruturado com os dados consolidados das decisões tomadas pelo modelo.
 
+## ⚠️ Nota de Segurança:<br> Caso sua máquina possua políticas de restrição para execução de arquivos .bat, você pode rodar a aplicação manualmente abrindo o terminal na pasta do projeto e utilizando os comandos:
+
+Instalação: python -m pip install -r requirements.txt
+
+Modo Terminal: python main.py
+
+Modo Web: streamlit run app.py
+
 Desenvolvido por Ryan Kaique.
