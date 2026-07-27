@@ -1,7 +1,7 @@
-#📊 Avaliador de Testes A/B com IA (Méliuz)#
+#📊 Avaliador de Testes A/B com IA (Méliuz)
 Projeto desenvolvido como parte do processo seletivo de estágio do Méliuz, com o objetivo de automatizar a análise estratégica de testes A/B de parceiros utilizando Inteligência Artificial (Google Gemini), oferecendo flexibilidade de execução via Terminal (CLI) ou Interface Web (Streamlit).
 
-##Tecnologias/LIBS Utilizadas:##
+##Tecnologias/LIBS Utilizadas:
 - Python 3.10+
 - Gemini (melhoras textuais nos executaveis e auxilio em soluções de erros)
 - Google GenAI SDK ( integração do assistente virtual )
@@ -9,7 +9,7 @@ Projeto desenvolvido como parte do processo seletivo de estágio do Méliuz, com
 - Pandas
 - Pathlib / Dotenv 
 
-📖 ##Instruções de Instalação e Execução:##
+##📖 Instruções de Instalação e Execução:
 Caso esteja executando o projeto a partir de uma versão compactada (.zip ou .rar), siga os passos abaixo:
 
 Extração:
@@ -26,7 +26,7 @@ Abra o terminal na pasta do projeto e instale as dependências necessárias list
 
 pip install -r requirements.txt
 
-##Inicialização:##
+##Inicialização:
 
 Utilize o arquivo .bat correspondente ao modo de execução desejado:
 
@@ -34,7 +34,7 @@ Utilize o arquivo .bat correspondente ao modo de execução desejado:
 
 🌐 Modo Web (Streamlit): Dê dois cliques no script de execução web para abrir o painel interativo diretamente no navegador padrão.
 
-##📂 Organização dos Resultados (output/)##
+##📂 Organização dos Resultados (output/)
 Após a realização das análises (seja de arquivos únicos ou em lote), os artefatos gerados pelo sistema são salvos automaticamente na pasta *output/*:
 
 Relatórios Executivos (output/reports/): Arquivos em formato .txt contendo a análise estratégica detalhada gerada pela IA, salvos com registro de data e hora (timestamp) para histórico completo.
