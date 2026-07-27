@@ -54,5 +54,5 @@ Instalação: python -m pip install -r requirements.txt
 Modo Terminal: python main.py
 
 Modo Web: streamlit run app.py
-
+#
 Desenvolvido por Ryan Kaique.
