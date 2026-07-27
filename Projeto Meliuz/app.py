@@ -7,12 +7,43 @@ from dotenv import load_dotenv
 from src.data_processor import processar_csv
 from src.ia_agent import analyze_ab_test
 from src.sheets_integrador import salvar_relatorio_txt, salvar_resultado_teste
+from src.config import GOOGLE_SHEET_ID, salvar_sheet_id
 
 load_dotenv()
 
-# Estrutura da pagina do streamlit
+# Estrutura da pagina do streamlit (DEVE SER O PRIMEIRO COMANDO DE INTERFACE)
 st.set_page_config(page_title="Avaliador de Testes A/B - Méliuz", page_icon="🚀", layout="wide")
 
+# ==========================================
+# BARRA LATERAL (Sidebar) - Configurações
+# ==========================================
+st.sidebar.title("⚙️ Configurações Google Sheets")
+
+usar_google_sheets = st.sidebar.checkbox("📊 Ativar sincronização", value=False)
+
+if usar_google_sheets:
+    # Mostra o campo de texto preenchido com o ID atual (se existir)
+    input_sheet = st.sidebar.text_input("ID ou Link da Planilha", value=GOOGLE_SHEET_ID if GOOGLE_SHEET_ID else "")
+    st.sidebar.text("E-mail do bot caso a planilha seja privada: melsheets@gen-lang-client-0646125612.iam.gserviceaccount.com")
+    
+    # Se o usuário digitar algo diferente do que está salvo, atualiza o .env
+    if input_sheet and input_sheet != GOOGLE_SHEET_ID:
+        salvar_sheet_id(input_sheet)
+        st.sidebar.success("✅ Planilha atualizada!")
+
+# Chave API na Sidebar
+st.sidebar.markdown("---")
+api_key_env = os.getenv("GEMINI_API_KEY")
+if not api_key_env:
+    st.sidebar.warning("⚠️ Chave da API do Gemini não encontrada no .env")
+    api_key_input = st.sidebar.text_input("Cole sua chave API do Gemini:", type="password")
+    if api_key_input:
+        os.environ["GEMINI_API_KEY"] = api_key_input
+        api_key_env = api_key_input
+
+# ==========================================
+# CORPO PRINCIPAL DA APLICAÇÃO
+# ==========================================
 st.title("📊 Avaliador de Testes A/B (Gemini) ")
 st.write("Faça o upload do arquivo CSV do parceiro para iniciar a análise estratégica automatizada.")
 st.write("O modelo de IA irá analisar os dados e fornecer insights sobre qual variante é mais promissora, além de gerar um relatório executivo e registrar os resultados.")
@@ -59,15 +90,6 @@ st.markdown(
 # Caminho da pasta
 pasta_docs = Path("docs")
 
-# Chave API
-api_key_env = os.getenv("GEMINI_API_KEY")
-if not api_key_env:
-    st.sidebar.warning("⚠️ Chave da API do Gemini não encontrada no .env")
-    api_key_input = st.sidebar.text_input("Cole sua chave API do Gemini:", type="password")
-    if api_key_input:
-        os.environ["GEMINI_API_KEY"] = api_key_input
-        api_key_env = api_key_input
-
 # Modos de analise dos arquivos
 modo = st.radio(
     "Selecione o modo de análise:",
@@ -103,9 +125,14 @@ elif modo == "📤 Fazer Upload Manual de CSV":
             f.write(arquivo_subido.getbuffer())
         arquivos_para_processar = [Path(temp_path)]
 
-# Mensagens e Processos
+# ==========================================
+# BOTÃO E PROCESSAMENTO DA ANÁLISE
+# ==========================================
 if arquivos_para_processar:
+    
+    # --- AQUI ESTÁ O BOTÃO DE AÇÃO ---
     if st.button("🚀 Iniciar Análise"):
+
         if not api_key_env:
             st.error("❌ Por favor, informe a chave da API do Gemini antes de continuar.")
         else:
@@ -121,12 +148,12 @@ if arquivos_para_processar:
                         if total_arquivos > 1 and i > 0:
                             time.sleep(20)
                             
-                       
                         resultado_analise = analyze_ab_test(dados_para_ia)
                         
-                        #CSV acumulativo
+                        # Salva Relatório em TXT
                         salvar_relatorio_txt(nome_exibicao, resultado_analise)
                         
+                        # Extrai a decisão e salva o registro
                         if "[Segunda SAÍDA : DADOS PARA PLANILHA]" in resultado_analise:
                             bloco_dados = resultado_analise.split("[Segunda SAÍDA : DADOS PARA PLANILHA]")[1].strip()
                             linhas = [linha for linha in bloco_dados.split('\n') if linha.strip() and not linha.startswith('-')]
@@ -134,9 +161,16 @@ if arquivos_para_processar:
                                 linha_dados = linhas[0]
                                 colunas = linha_dados.split('|')
                                 if len(colunas) >= 4:
-                                    salvar_resultado_teste(colunas[0].strip(), colunas[1].strip(), colunas[2].strip(), colunas[3].strip())
+                                    # --- CORREÇÃO APLICADA AQUI (sincronizar_sheets) ---
+                                    salvar_resultado_teste(
+                                        nome_teste=colunas[0].strip(), 
+                                        descricao=colunas[1].strip(), 
+                                        resultado=colunas[2].strip(), 
+                                        decisao=colunas[3].strip(),
+                                        sincronizar_sheets=usar_google_sheets
+                                    )
                         
-                        st.success(f"✅ Análise concluída para: {nome_exibicao}")
+                        st.success(f"✅ Análise concluída e salva com sucesso para: {nome_exibicao}")
                         
                         st.markdown("---")
                         st.subheader(f"📈 Panorama Visual das Variantes: {nome_exibicao}")

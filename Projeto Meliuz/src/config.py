@@ -73,3 +73,30 @@ except Exception:
 
 if DEBUG:
     logging.debug("Modo DEBUG ativado. Caminhos e configurações carregados com sucesso.")
+#Google sheets integrado
+GOOGLE_SHEET_ID = os.getenv("GOOGLE_SHEET_ID")
+
+def salvar_sheet_id(novo_id: str):
+
+    try:
+
+        linhas = []
+        if env_path.exists():
+            with open(env_path, "r", encoding="utf-8") as f:
+                linhas = f.readlines()
+
+        linhas = [linha for linha in linhas if not linha.startswith("GOOGLE_SHEET_ID=")]
+        
+
+        linhas.append(f"\nGOOGLE_SHEET_ID={novo_id}\n")
+        
+
+        with open(env_path, "w", encoding="utf-8") as f:
+            f.writelines(linhas)
+            
+        # Atualiza na memória
+        os.environ["GOOGLE_SHEET_ID"] = novo_id
+        global GOOGLE_SHEET_ID
+        GOOGLE_SHEET_ID = novo_id
+    except Exception as e:
+        print(f"Erro ao salvar a planilha no .env: {e}")
